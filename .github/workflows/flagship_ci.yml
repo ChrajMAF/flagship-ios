@@ -6,11 +6,11 @@ jobs:
     strategy:
       matrix:
         run-config:
-          - { scheme: 'Flagship', destination: 'platform=iOS,name=iPhone', label: 'SDK Flagship for iOS' }
+          - { scheme: 'Flagship', destination: 'platform=iOS,name=iPhone 14', label: 'SDK Flagship for iOS' }
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build
+    - name: '${{matrix.run-config['scheme']}}'
       run: xcodebuild clean test -project Flagship/Flagship.xcodeproj -scheme '${{ matrix.run-config['scheme'] }}'  -destination '${{ matrix.run-config['destination'] }}'
 
 
