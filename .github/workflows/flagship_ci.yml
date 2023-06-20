@@ -12,7 +12,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build
       run: xcodebuild clean test -project Flagship/Flagship.xcodeproj -scheme '${{ matrix.run-config['scheme'] }}'  -destination '${{ matrix.run-config['destination'] }}'
-   # - name: Update Code Coverage
-   #  run: |
-   #   bash <(curl -s https://codecov.io/bash)
+    - name: Update Code Coverage
+
 
