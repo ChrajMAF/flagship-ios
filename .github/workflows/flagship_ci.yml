@@ -6,7 +6,7 @@ jobs:
     strategy:
       matrix:
         run-config:
-          - { scheme: 'Flagship', destination: 'platform=iOS,name=iPhone', label:"SDK Flagship for iOS" }
+          - { scheme: 'Flagship', destination: 'platform=iOS,name=iPhone', label: 'SDK Flagship for iOS' }
 
     steps:
     - uses: actions/checkout@v2
