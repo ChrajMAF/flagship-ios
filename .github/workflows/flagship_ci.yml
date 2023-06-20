@@ -10,7 +10,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: '${{matrix.run-config['scheme']}}'
+    - name: '${{matrix.run-config['label']}}'
       run: xcodebuild clean test -project Flagship/Flagship.xcodeproj -scheme '${{ matrix.run-config['scheme'] }}'  -destination '${{ matrix.run-config['destination'] }}'
 
 
