@@ -23,8 +23,8 @@ The FlagShip SDK is an iOS framework whose goal is to help you run Flagship camp
 
   s.homepage         = "https://app.flagship.io/login"
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'FlagShip' => 'adel@abtasty.com' }
-  s.source           = { :git => 'https://github.com/flagship-io/flagship-ios.git', :tag => s.version.to_s }
+  s.author           = { 'FlagShipChanchal' => 'adel@abtasty.com' }
+  s.source           = { :git => 'https://github.com/ChrajMAF/flagship-ios.git', :tag => s.version.to_s }
   
   s.ios.deployment_target  = "11.0"
   s.tvos.deployment_target = "11.0"
